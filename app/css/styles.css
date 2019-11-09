@@ -171,7 +171,7 @@ footer {
 
 #content .image {
   background: url(/images/bg-top.png) center center no-repeat;
-  height: 1244px;
+  height: 3626px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -180,6 +180,12 @@ footer {
 #content h1 {
   color: #2ea6d0;
   font-size: 72px; }
+
+#content .right .box__image {
+  order: 2; }
+
+#content .right .box__infos {
+  padding-right: 100px; }
 
 #content .box__brand {
   max-width: 85%;
@@ -192,7 +198,21 @@ footer {
   align-items: center;
   height: 100%;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  margin-bottom: 100px; }
+
+#content .box__title {
+  color: #2ea6d0;
+  font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold; }
+
+#content .box__description {
+  color: #858a8f;
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 70px;
+  word-break: break-all; }
 
 #content .box__text {
   color: #fff;
@@ -213,4 +233,5 @@ footer {
     justify-content: center; }
 
 #content .box__infos {
-  width: 500px; }
+  width: 670px;
+  margin-left: 100px; }
