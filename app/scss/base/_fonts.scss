@@ -1,0 +1,73 @@
+@charset 'UTF-8';
+
+//------------------------------------
+//  FONTS
+//------------------------------------
+
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/TrebuchetMS-Bold.eot");
+  src: local("Trebuchet MS Bold"), local("TrebuchetMS-Bold"),
+    url("fonts/TrebuchetMS-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TrebuchetMS-Bold.woff2") format("woff2"),
+    url("fonts/TrebuchetMS-Bold.woff") format("woff"),
+    url("fonts/TrebuchetMS-Bold.ttf") format("truetype"),
+    url("fonts/TrebuchetMS-Bold.svg#TrebuchetMS-Bold") format("svg");
+}
+
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/TrebuchetMS-Italic.eot");
+  src: local("Trebuchet MS Italic"), local("TrebuchetMS-Italic"),
+    url("fonts/TrebuchetMS-Italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TrebuchetMS-Italic.woff2") format("woff2"),
+    url("fonts/TrebuchetMS-Italic.woff") format("woff"),
+    url("fonts/TrebuchetMS-Italic.ttf") format("truetype"),
+    url("fonts/TrebuchetMS-Italic.svg#TrebuchetMS-Italic") format("svg");
+}
+
+@font-face {
+  font-family: "Keep Calm Med";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/KeepCalm-Medium.eot");
+  src: local("Keep Calm Medium"), local("KeepCalm-Medium"),
+    url("fonts/KeepCalm-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/KeepCalm-Medium.woff2") format("woff2"),
+    url("fonts/KeepCalm-Medium.woff") format("woff"),
+    url("fonts/KeepCalm-Medium.ttf") format("truetype"),
+    url("fonts/KeepCalm-Medium.svg#KeepCalm-Medium") format("svg");
+}
+
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/TrebuchetMS.eot");
+  src: local("Trebuchet MS"), local("TrebuchetMS"),
+    url("fonts/TrebuchetMS.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TrebuchetMS.woff2") format("woff2"),
+    url("fonts/TrebuchetMS.woff") format("woff"),
+    url("fonts/TrebuchetMS.ttf") format("truetype"),
+    url("fonts/TrebuchetMS.svg#TrebuchetMS") format("svg");
+}
+
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/Trebuchet-BoldItalic.eot");
+  src: local("Trebuchet MS Bold Italic"), local("Trebuchet-BoldItalic"),
+    url("fonts/Trebuchet-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Trebuchet-BoldItalic.woff2") format("woff2"),
+    url("fonts/Trebuchet-BoldItalic.woff") format("woff"),
+    url("fonts/Trebuchet-BoldItalic.ttf") format("truetype"),
+    url("fonts/Trebuchet-BoldItalic.svg#Trebuchet-BoldItalic") format("svg");
+}
+
+$base-font: "Trebuchet MS", "Helvetica Neue", Arial, sans-serif !default;
+$second-font: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif !default;

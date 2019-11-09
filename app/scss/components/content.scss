@@ -1,0 +1,59 @@
+#content {
+    .image {
+        background: url(/images/bg-top.png) center center no-repeat;
+        height: 1244px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    h1 {
+        color: $secondary-color;
+        font-size: 72px;
+    }
+
+    .box {
+
+        &__brand {
+            max-width: 85%;
+            margin: 0 auto;
+            padding: 250px 0 330px 0;
+        }
+
+        &__detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+        }
+
+        &__text {
+            color: #fff;
+            font-size: 20px;
+            line-height: 40px;
+            margin-top: 90px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        &__image {
+            width: 670px;
+            height: 450px;
+            background-color: $secondary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__infos {
+            width: 500px;
+        }
+    }
+}
