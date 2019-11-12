@@ -1,3 +1,35 @@
+// BREAKPOINT
+$phone: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$lg-desktop: 1200px;
+
+@mixin phone {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) and (max-width: #{$lg-desktop}) {
+        @content;
+    }
+}
+
+@mixin lg-desktop {
+    @media (min-width: #{$lg-desktop}) {
+        @content;
+    }
+}
+// BREAKPOINT
+
+// CONTENT ==================================
 #content {
     .image {
         background: url(/images/bg-top.png) center center no-repeat;
@@ -17,10 +49,18 @@
     .right {
         .box__image {
             order: 2;
+            
+            @include tablet {
+                order: 1;
+            }
         }
 
         .box__infos {
             padding-right: 100px;
+            
+            @include tablet {
+                padding-right: 0;
+            }
         }
     }
     .box {
@@ -39,6 +79,10 @@
             position: relative;
             z-index: 0;
             margin-bottom: 100px;
+
+            @include tablet {
+                flex-direction: column;
+            }
         }
 
         &__title {
@@ -46,6 +90,9 @@
             font-family: $second-font;
             font-size: 40px;
             font-weight: bold;
+            @include tablet {
+                margin-top: 30px;
+            }
         }
 
         &__description {
@@ -54,6 +101,9 @@
             line-height: 40px;
             margin-top: 70px;
             word-break: break-all;
+            @include tablet {
+                margin-top: 30px;
+            }
         }
 
         &__text {
@@ -62,6 +112,17 @@
             line-height: 40px;
             margin-top: 90px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        &__social {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 2%;
+            top: 30%;
+            a {
+                margin-bottom: 30px;
+            }
         }
 
         &__image {
@@ -81,6 +142,92 @@
         &__infos {
             width: 670px;
             margin-left: 100px;
+             @include tablet {
+                margin-left: 0;
+                order: 2;
+                text-align: center;
+             }
         }
     }
 }
+// CONTENT ==================================
+
+// INFO ==================================
+#info {
+    background-color: #273042;
+    
+    .info {
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        font-family: $second-font;
+        font-size: 40px;
+        padding: 158px 0;
+        strong {
+            color: #2ea6d0;
+        }
+    }
+}
+// INFO ==================================
+
+
+// WHY ==================================
+#why {
+    background-color: #eceef0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 0;
+    text-align: center;
+
+    .reason {
+        font-family: $second-font;
+        text-align: center;
+        &__title {
+            color: #273042;
+            font-size: 38px;
+        }
+        
+        &__description {
+            color: $text;
+            font-size: 20px;
+            margin: 25px 0 75px 0;
+        }
+
+    }
+    
+    .card {
+        font-family: $second-font;
+        box-shadow: 0px 30px 22px -12px rgba(0, 0, 0, .26);
+        width: 415px;
+        padding: 60px 65px 85px;
+        border: 2px solid transparent;
+        transition: all .5s ease;
+        margin: 0 20px; 
+        &:hover {
+            border: 2px solid $secondary-color;
+        }
+
+        @include tablet {
+            margin-top: 20px;
+        }
+
+        &__icon {
+            padding: 0 0 45px 0;
+        }
+
+        &__title {
+            color: $secondary-color;
+            font-size: 36px;
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+
+        &__description {
+            color: $text;
+            line-height: 30px;
+        }
+
+    }
+}
+// WHY ==================================
