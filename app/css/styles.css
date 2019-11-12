@@ -234,7 +234,7 @@ footer {
   font-size: 20px;
   line-height: 40px;
   margin-top: 90px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  font-family: "Trebuchet MS", "Helvetica Neue", Arial, sans-serif; }
 
 #content .box__social {
   display: flex;
@@ -243,7 +243,10 @@ footer {
   right: 2%;
   top: 30%; }
   #content .box__social a {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    transition: all .5s ease; }
+    #content .box__social a:hover {
+      transform: scale(1.2); }
 
 #content .box__image {
   width: 670px;
@@ -317,3 +320,10 @@ footer {
     #why .card__description {
       color: #858a8f;
       line-height: 30px; }
+
+#content.content .image {
+  background: url(/images/bg-top2.png) center center no-repeat;
+  height: 1235px; }
+
+#option {
+  display: flex; }
