@@ -1,0 +1,27 @@
+// INFO ==================================
+#info {
+    background-color: #273042;
+
+    .info {
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        font-family: $second-font;
+        font-size: 40px;
+        padding: 158px 0;
+
+        @include phone {
+            font-size: 24px;
+
+            strong {
+                font-size: 24px;
+            }
+        }
+
+        strong {
+            color: #2ea6d0;
+        }
+    }
+}
+
+// INFO ==================================

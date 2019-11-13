@@ -2,11 +2,17 @@
 
 @import "./base/fonts";
 @import "./base/global.scss";
-@import "./base/responsive.scss";
 
 @import "./components/container.scss";
 @import "./components/header.scss";
 @import "./components/footer.scss";
 
+
+// ARQUIVOS A SER INSERIDOS
+@import "./base/responsive.scss";
+
 @import "./components/content.scss";
+@import "./components/info.scss";
+@import "./components/why.scss";
 @import "./components/content2.scss";
+// ARQUIVOS A SER INSERIDOS

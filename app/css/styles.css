@@ -183,13 +183,13 @@ footer {
 
 #content .right .box__image {
   order: 2; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     #content .right .box__image {
       order: 1; } }
 
 #content .right .box__infos {
   padding-right: 100px; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     #content .right .box__infos {
       padding-right: 0; } }
 
@@ -206,7 +206,7 @@ footer {
   position: relative;
   z-index: 0;
   margin-bottom: 100px; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     #content .box__detail {
       flex-direction: column; } }
 
@@ -215,7 +215,7 @@ footer {
   font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
   font-size: 40px;
   font-weight: bold; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     #content .box__title {
       margin-top: 30px; } }
 
@@ -225,9 +225,10 @@ footer {
   line-height: 40px;
   margin-top: 70px;
   word-break: break-all; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     #content .box__description {
-      margin-top: 30px; } }
+      font-size: 16px;
+      margin: 30px; } }
 
 #content .box__text {
   color: #fff;
@@ -262,11 +263,12 @@ footer {
 #content .box__infos {
   width: 670px;
   margin-left: 100px; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     #content .box__infos {
       margin-left: 0;
       order: 2;
-      text-align: center; } }
+      text-align: center;
+      width: auto; } }
 
 #info {
   background-color: #273042; }
@@ -277,16 +279,22 @@ footer {
     font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
     font-size: 40px;
     padding: 158px 0; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      #info .info {
+        font-size: 24px; }
+        #info .info strong {
+          font-size: 24px; } }
     #info .info strong {
       color: #2ea6d0; }
 
 #why {
   background-color: #eceef0;
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
   padding: 80px 0;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   #why .reason {
     font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
     text-align: center; }
@@ -297,6 +305,9 @@ footer {
       color: #858a8f;
       font-size: 20px;
       margin: 25px 0 75px 0; }
+  #why .box-card {
+    display: flex;
+    justify-content: space-around; }
   #why .card {
     font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
     box-shadow: 0px 30px 22px -12px rgba(0, 0, 0, 0.26);
@@ -304,13 +315,15 @@ footer {
     padding: 60px 65px 85px;
     border: 2px solid transparent;
     transition: all .5s ease;
-    margin: 0 20px; }
+    margin: 0 20px;
+    display: inline-block; }
     #why .card:hover {
       border: 2px solid #2ea6d0; }
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: 320px) and (max-width: 768px) {
       #why .card {
         margin-top: 20px; } }
     #why .card__icon {
+      margin: 0 auto;
       padding: 0 0 45px 0; }
     #why .card__title {
       color: #2ea6d0;
@@ -322,8 +335,64 @@ footer {
       line-height: 30px; }
 
 #content.content .image {
-  background: url(/images/bg-top2.png) center center no-repeat;
+  background: url("/images/bg-top2.png") center center no-repeat;
   height: 1235px; }
 
+#content.content .box__brand {
+  padding: 250px 0 60px 0; }
+
 #option {
+  align-items: center;
   display: flex; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    #option {
+      flex-direction: column; } }
+  #option .image {
+    padding-right: 80px;
+    width: 100%; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      #option .image {
+        margin-bottom: 30px;
+        padding-right: 0; } }
+  #option .option {
+    width: 500px; }
+    #option .option__image {
+      height: auto;
+      margin-right: 65px;
+      width: auto; }
+    #option .option__box {
+      align-items: center;
+      font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      margin-bottom: 90px; }
+      #option .option__box .title {
+        color: #19254f;
+        font-size: 40px; }
+      #option .option__box:nth-child(odd) .title {
+        color: #2ea6d0; }
+      @media (min-width: 320px) and (max-width: 768px) {
+        #option .option__box:nth-child(even) .title {
+          color: #2ea6d0; } }
+    #option .option__description {
+      color: #858a8f;
+      font-size: 20px;
+      line-height: 30px; }
+
+#why.content .reason__title {
+  color: #2ea6d0; }
+
+#why.content .card {
+  background-color: #fff;
+  text-align: left; }
+  #why.content .card:nth-child(odd) {
+    background-color: #273042; }
+    #why.content .card:nth-child(odd) .card__number {
+      color: #fff; }
+  #why.content .card__number {
+    color: #161b35;
+    border-bottom: 1px solid #2ea6d0;
+    font-size: 120px;
+    display: inline-block;
+    margin-bottom: 45px; }
+  #why.content .card__description {
+    font-size: 20px; }

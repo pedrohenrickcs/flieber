@@ -1,11 +1,107 @@
 // CONTENT ==================================
 #content.content {
     .image {
-        background: url(/images/bg-top2.png) center center no-repeat;
+        background: url('/images/bg-top2.png') center center no-repeat;
         height: 1235px;
+    }
+
+    .box {
+        &__brand {
+            padding: 250px 0 60px 0;
+        }
     }
 }
 // CONTENT ==================================
 
 // OPTION ==============================
+#option {
+    align-items: center;
+    display: flex;
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    .image {
+        padding-right: 80px;
+        width: 100%;
+
+        @include phone {
+            margin-bottom: 30px;
+            padding-right: 0;
+        }
+    }
+
+    .option {
+        width: 500px;
+
+        &__image {
+            height: auto;
+            margin-right: 65px;
+            width: auto;
+        }
+
+        &__box {
+            align-items: center;
+            font-family: $second-font;
+            display: flex;
+            margin-bottom: 90px;
+            .title {
+                color: $primary-color;
+                font-size: 40px;
+            }
+            &:nth-child(odd) {
+                .title {
+                    color: $secondary-color;
+                }
+            }
+            @include phone {
+                &:nth-child(even) {
+                    .title {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+
+        &__description {
+            color: $text;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
 // OPTION ==============================
+
+#why.content {
+
+    .reason {
+        &__title {
+            color: $secondary-color;
+        }
+    }
+
+    .card {
+        background-color: #fff;
+        text-align: left;
+        &:nth-child(odd) {
+            background-color: #273042;
+
+            .card__number {
+                color: #fff;
+            }
+        }
+
+        &__number {
+            color: #161b35;
+            border-bottom: 1px solid $secondary-color;
+            font-size: 120px;
+            display: inline-block;
+            margin-bottom: 45px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+    }
+}
