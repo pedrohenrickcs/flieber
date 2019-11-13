@@ -384,9 +384,9 @@ footer {
 #why.content .card {
   background-color: #fff;
   text-align: left; }
-  #why.content .card:nth-child(odd) {
+  #why.content .card:nth-child(even) {
     background-color: #273042; }
-    #why.content .card:nth-child(odd) .card__number {
+    #why.content .card:nth-child(even) .card__number {
       color: #fff; }
   #why.content .card__number {
     color: #161b35;

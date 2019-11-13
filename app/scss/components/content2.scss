@@ -84,7 +84,7 @@
     .card {
         background-color: #fff;
         text-align: left;
-        &:nth-child(odd) {
+        &:nth-child(even) {
             background-color: #273042;
 
             .card__number {
